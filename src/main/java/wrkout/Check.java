@@ -25,7 +25,7 @@ public class Check extends HttpServlet {
 			Date date= new Date();
 			
 			//retreive all products in 
-			ArrayList<Cart> cart_list=	(ArrayList<Cart>) request.getSession().getAttribute("cart-list");
+			ArrayList<Cart> cart_list=(ArrayList<Cart>) request.getSession().getAttribute("cart-list");
 		
 			//get user name and id in session
 			String user=(String)request.getSession().getAttribute("username");
